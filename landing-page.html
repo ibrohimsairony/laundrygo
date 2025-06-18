@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaundryGo.</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: #1a202c; /* gray-900 */
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white"> <!-- Menambahkan background default untuk body, baik untuk section lain -->
+    <header class=" top-0 left-0 w-full z-30 bg-transparent border-white/30 fixed" id="header"> 
+      <div class="container mx-auto py-6 px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <a href="#" id="logo" class="text-2xl font-bold text-white transition-colors duration-300"> Laundry<span  class="text-blue-600">Go</span>. </a>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="dashboard.html"
+              class="px-4 py-2 border border-white/70 rounded-md text-sm font-medium text-white hover:bg-white/20 hover:border-white transition-colors duration-300" id="masuk"
+              >
+              Masuk
+              </a>
+            <a
+              href="dashboard.html" 
+              class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors duration-300"
+              >Daftar</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative h-screen flex items-center justify-center text-center text-white"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1642690743989-9c8ae0adcf93?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Mesin cuci di laundry"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+      </div>
+
+      <div class="relative z-10 px-4">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Stop Pusing Pakai Bon Kertas. Kelola Bisnis Laundry Anda Secara
+          Profesional.
+        </h1>
+        <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-200">
+          LaundryGo adalah software kasir online (SaaS) yang dirancang khusus
+          untuk UMKM Laundry di Indonesia. Catat order, lacak status cucian, dan
+          kirim notifikasi WhatsApp ke pelanggan secara otomatis.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="dashboard.html"
+            class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-300"
+            >Mulai Uji Coba Gratis</a
+          >
+          <a
+            href="dashboard.html"
+            class="px-8 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-lg transition-colors duration-300"
+            >Lihat Cara Kerja</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 lg:px-24">
+        <div class="text-center">
+          <p class="text-blue-600 font-semibold">
+            Manajemen Manual Bikin Bisnis Berantakan?
+          </p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">
+            Atur Bisnis Laundry Lebih Mudah dengan LaundryGo
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center h-12 w-12 mx-auto bg-blue-100 text-blue-600 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold text-gray-900">
+              Bon Kertas Hilang?
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Dengan nota digital yang dikirim via WhatsApp, semua order
+              tercatat aman di sistem. Lebih profesional dan bebas khawatir.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center h-12 w-12 mx-auto bg-blue-100 text-blue-600 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold text-gray-900">
+              Pakaian Tertukar?
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Lacak setiap order dengan detail. Sistem kami membantu mengurangi
+              risiko pakaian tertukar atau lupa diambil pelanggan.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center h-12 w-12 mx-auto bg-blue-100 text-blue-600 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold text-gray-900">
+              Repot Rekap Pendapatan?
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Dapatkan laporan pendapatan harian dan bulanan secara otomatis.
+              Fokus kembangkan bisnis, bukan pusing menghitung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+            Hanya 3 Langkah untuk Laundry Lebih Modern
+          </h2>
+        </div>
+        <div class="mt-12 max-w-3xl mx-auto space-y-10">
+          <div class="flex items-start">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold text-xl"
+            >
+              1
+            </div>
+            <div class="ml-4">
+              <h3 class="text-xl font-semibold text-gray-900">
+                Catat Order Masuk
+              </h3>
+              <p class="mt-1 text-gray-600">
+                Input detail cucian dalam hitungan detik. Nota digital langsung
+                terkirim ke WhatsApp pelanggan.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold text-xl"
+            >
+              2
+            </div>
+            <div class="ml-4">
+              <h3 class="text-xl font-semibold text-gray-900">
+                Update Status Cucian
+              </h3>
+              <p class="mt-1 text-gray-600">
+                Cukup satu klik di dasbor untuk mengubah status order dari
+                'Dicuci' hingga 'Siap Diambil'.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white font-bold text-xl"
+            >
+              3
+            </div>
+            <div class="ml-4">
+              <h3 class="text-xl font-semibold text-gray-900">
+                Pelanggan Senang, Bisnis Lancar
+              </h3>
+              <p class="mt-1 text-gray-600">
+                Sistem otomatis memberitahu pelanggan saat laundry selesai.
+                Tidak ada lagi telepon atau chat menanyakan status.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 lg:px-8  text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          Pilih Paket yang Sesuai Kebutuhan Anda
+        </h2>
+        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+          Harga transparan, tanpa biaya tersembunyi. Mulai kembangkan bisnis Anda hari ini.
+          </p>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center"
+          >
+            <h4 class="mt-5 text-2xl font-semibold text-gray-900">Basic</h4>
+            <p class="mt-2 text-gray-600">
+              Paling pas untuk usaha laundry rintisan atau yang baru memulai.
+            </p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-gray-900">Rp 99.000</span>
+              <span class="text-gray-600">/bulan</span>
+            </div>
+            <div>
+              <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-6">Fitur Inti : </h5>
+              <ul class="mt-3 text-left space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Catat Order
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Nota Digital via Link
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Database Pelanggan
+                </li>
+                </ul>
+                <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Batasan Penggunaan : </h5>
+                <ul class="mt-3 text-left space-y-3 text-gray-600">
+                  
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-500 mr-2"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    100 Transaksi per Pelanggan
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Transaksi tak terbatas
+                  </li>
+                  <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Pertumbuhan (Growth) : </h5>
+                  <ul class="mt-3 text-left space-y-3 text-gray-600">
+                    
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Laporan Keuangan Dasar
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Manajemen Harga dan Layanan
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Notifikasi Whatsapp Otomatis
+                    </li>
+                  </ul>
+                  <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Profesional : </h5>
+                  <ul class="mt-3 text-left space-y-3 text-gray-600">
+                    
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Manajemen Alur Karyawan
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                     Manajemen Multi Cabang
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Dukungan Prioritas
+                    </li>
+                  </ul>
+                  <div class="mt-8">
+                    <a href="https://wa.me/6281234567890?text=Halo%20LaundryGo,%20saya%ingin%20ingin%20memesan%20paket%20Basic%20LaundryGo.%20Mohon%20informasi%20lebih%20lanjut%20tentang%20paket%20yang%20dipilih" class="block w-full text-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-300">
+                      Pesan Paket Basic
+                    </a>
+                  </div>
+                </ul>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center relative "
+          >
+          <div class="absolute right-0 left-0  top-0 rounded-t-lg h-12 bg-yellow-600 z-10 flex justify-center items-center">
+            <p class="text-2xl font-medium  text-white ">Paling Laris</p>
+          </div>
+            <h4 class="mt-5 text-2xl font-semibold text-gray-900">Pro</h4>
+            <p class="mt-2 text-gray-600">
+              Solusi paling populer untuk bisnis yang sedang bertumbuh pesat
+            </p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-gray-900">Rp 150.000</span>
+              <span class="text-gray-600">/bulan</span>
+            </div>
+            <div>
+            <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-6">Fitur Inti : </h5>
+            <ul class="mt-3 text-left space-y-3 text-gray-600">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-500 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Catat Order
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-500 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Nota Digital via Link
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-green-500 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Database Pelanggan
+              </li>
+              </ul>
+              <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Batasan Penggunaan : </h5>
+              <ul class="mt-3 text-left space-y-3 text-gray-600">
+                
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  100 Transaksi per Pelanggan
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  
+                  Transaksi tak terbatas
+                </li>
+                <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Pertumbuhan (Growth) : </h5>
+                <ul class="mt-3 text-left space-y-3 text-gray-600">
+                  
+                  <li class="flex items-center">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                    Laporan Keuangan Dasar
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                    Manajemen Harga dan Layanan
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                    Notifikasi Whatsapp Otomatis
+                  </li>
+                </ul>
+                <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Profesional : </h5>
+                <ul class="mt-3 text-left space-y-3 text-gray-600">
+                  
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Manajemen Alur Karyawan
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                   Manajemen Multi Cabang
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Dukungan Prioritas
+                  </li>
+                </ul>
+                <div class="mt-8">
+                  <a href="https://wa.me/6281234567890?text=Halo%20LaundryGo,%20saya%20ingin%20memesan%20paket%20Pro%20LaundryGo.%20Mohon%20informasi%20lebih%20lanjut%20tentang%20paket%20yang%20dipilih" class="block w-full text-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-300">
+                    Pesan Paket Pro
+                  </a>
+                </div>
+              </ul>
+          </div>
+        </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg text-center"
+          >
+            <h4 class="mt-5 text-2xl font-semibold text-gray-900">Enterprise</h4>
+            <p class="mt-2 text-gray-600">
+              Untuk laundry profesional dengan beberapa cabang atau volume tinggi
+            </p>
+            <div class="mt-6">
+              <span class="text-4xl font-bold text-gray-900">Custom</span>
+              
+            </div>
+            <div>
+              <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-6">Fitur Inti : </h5>
+              <ul class="mt-3 text-left space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Catat Order
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Nota Digital via Link
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Database Pelanggan
+                </li>
+                </ul>
+                <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Batasan Penggunaan : </h5>
+                <ul class="mt-3 text-left space-y-3 text-gray-600">
+                  
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        clip-rule="evenodd"
+                      />
+                    </svg> 
+                    100 Transaksi per Pelanggan
+                  </li>
+                  <li class="flex items-center">
+                    
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-500 mr-2"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Transaksi tak terbatas
+                  </li>
+                  <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Pertumbuhan (Growth) : </h5>
+                  <ul class="mt-3 text-left space-y-3 text-gray-600">
+                    
+                    <li class="flex items-center">
+                      <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                      Laporan Keuangan Dasar
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                      Manajemen Harga dan Layanan
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                      Notifikasi Whatsapp Otomatis
+                    </li>
+                  </ul>
+                  <h5 class="text-lg text-left space-y-1 text-gray-700 font-medium mt-3">Fitur Profesional : </h5>
+                  <ul class="mt-3 text-left space-y-3 text-gray-600">
+                    
+                    <li class="flex items-center">
+                      <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                      Manajemen Alur Karyawan
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                     Manajemen Multi Cabang
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-green-500 mr-2"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                      Dukungan Prioritas
+                    </li>
+                  </ul>
+                  <div class="mt-8">
+                    <a href="https://wa.me/6281234567890?text=Halo%20LaundryGo,%20saya%20ingin%20memesan%20paket%20Enterprise%20LaundryGo.%20Mohon%20informasi%20lebih%20lanjut%20tentang%20paket%20yang%20dipilih"
+                   class="block w-full text-center px-6 py-3 border border-blue-600 hover:bg-blue-600/10 text-blue-600 font-semibold rounded-lg transition-colors duration-300">
+                      Hubungi Sales (Enterprise)
+                    </a>
+                  </div>
+                </ul>
+            </div>
+          </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          Siap Tinggalkan Cara Lama?
+        </h2>
+        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+          Bergabunglah dengan puluhan pemilik laundry lainnya yang sudah beralih
+          ke cara modern. Coba semua fitur premium, gratis selama 14 hari. Tanpa
+          perlu kartu kredit.
+        </p>
+        <div class="mt-8">
+          <a
+            href="dashboard.html"
+            class="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-300"
+            >Klaim Uji Coba Gratis Anda Sekarang</a
+          >
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-slate-900 text-gray-300">
+      <div class="container mx-auto py-12 px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h5 class="text-lg font-semibold text-white mb-4">LaundryGo</h5>
+            <p class="text-sm">
+              Solusi modern untuk manajemen bisnis laundry Anda. Efisien,
+              profesional, dan mudah digunakan.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-lg font-semibold text-white mb-4">Tautan Cepat</h5>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#hero" class="hover:text-white">Beranda</a></li>
+              <li><a href="#fitur" class="hover:text-white">Fitur</a></li>
+              <li><a href="#harga" class="hover:text-white">Harga</a></li>
+              <li><a href="#kontak" class="hover:text-white">Kontak</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-lg font-semibold text-white mb-4">Legal</h5>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
+              <li><a href="#" class="hover:text-white">Syarat & Ketentuan</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-lg font-semibold text-white mb-4">Hubungi Kami</h5>
+            <p class="text-sm">Jl. Merdeka No. 123, Jakarta</p>
+            <p class="text-sm">Email: support@laundrygo.id</p>
+            <p class="text-sm">Telepon: (021) 123-4567</p>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-gray-700 pt-8 text-center text-sm">
+          <p>&copy; 2024 LaundryGo. All Rights Reserved. Dibuat dengan ❤️ di Madiun.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const header = document.getElementById('header');
+      const logo = document.getElementById('logo');
+const masuk = document.getElementById('masuk');
+
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header.classList.add('backdrop-blur-xl');
+          header.classList.add('border-blue-600');
+          header.classList.add('border-b');
+        } else {
+          header.classList.remove('backdrop-blur-xl');
+          header.classList.remove('border-blue-600');
+          header.classList.remove('border-b'); 
+          header.classList.remove('bg-transparent'); 
+        }
+        if (window.scrollY > window.innerHeight) {
+          masuk.classList.add('border-blue-600/70');
+          masuk.classList.add('hover:bg-blue-600/20');
+          masuk.classList.add('hover:border-blue-600');
+          masuk.classList.add('text-blue-600')
+          masuk.classList.remove('border-white/70');
+          masuk.classList.remove ('hover:bg-white/20');
+          masuk.classList.remove('hover:border-white');
+          masuk.classList.remove('text-white')
+          logo.classList.add('text-black');
+          logo.classList.remove('text-white');
+        } else {
+          masuk.classList.remove('border-blue-600/70');
+          masuk.classList.remove('hover:bg-blue-600/20');
+          masuk.classList.remove('hover:border-blue-600');
+          masuk.classList.remove('text-blue-600')
+          masuk.classList.add('border-white/70');
+          masuk.classList.add ('hover:bg-white/20');
+          masuk.classList.add('hover:border-white');
+          masuk.classList.add('text-white');
+          logo.classList.remove('text-black');
+          logo.classList.add('text-white');
+        }
+      });
+    </script>
+
+    <!-- Tombol Hubungi Kami (WhatsApp Floating) -->
+    <a
+      href="https://wa.me/6281234567890?text=Halo%20LaundryGo,%20saya%20tertarik%20dengan%20layanan%20Anda."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg flex items-center transition-colors duration-300 z-20"
+      aria-label="Hubungi Kami via WhatsApp"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.413z"/>
+      </svg>
+      <span>Hubungi Kami</span>
+    </a>
+  </body>
+</html>
